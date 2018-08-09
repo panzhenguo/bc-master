@@ -1,0 +1,17 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: bc-monitor-server
+security:
+  basic:
+    enabled: false
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: bc-provider-company,bc-provider-company-role,bc-provider-company-employee,bc-provider-company,bc-provider-company
+  clusterNameExpression: new String("default")
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.9.151:8761/eureka/

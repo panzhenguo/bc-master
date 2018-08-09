@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+  application:
+     name: bc-provider-company
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql

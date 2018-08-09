@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: bc-swagger
+  profiles:
+    active: dev
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
